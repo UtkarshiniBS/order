@@ -1,0 +1,18 @@
+{
+  "ios": {
+    "getWalmartVerifyIdentityJS": "(function() { var element = \n             document.evaluate(\"//p[contains(text(),'Press & Hold')]\", \n             document,null, XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue; \n             if (element != undefined) { return \"verify_identity\"} } )()",
+    "getWalmartCheckErrorJS": "(function() { var element = document.evaluate(\"//div[contains(@id,'global-error')]\",document,null,           XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue.textContent;\n            if (element == null || element.length == 0)\n            {return null} else {\n            return element}})()",
+    "getWalmartIdentificationJS": "",
+    "getWalmartSignInRequiredJS": "Boolean(document.evaluate(\"//*[contains(text(),'Sign in')]\", document, null, XPathResult.ANY_TYPE,null).iterateNext())"
+  },
+
+  "android": {
+    "getCheckErrorScriptWalmart": "(function() { var element = document.evaluate(\"//div[contains(@id,'global-error')]\",document,null,\n                 \n\n         \nXPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue.textContent;\n                \n\n         \nif (element == null || element.length == 0)\n                \n\n         \n{return null} else {\n                \n\n         \nreturn element}})()",
+
+    "getAuthenticationChallenge": "(function() { var element = \n                \n\n         \ndocument.evaluate(\"//p[contains(text(),'Press & Hold')]\",document,null, XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue; \n               \n \n         \nif (element != undefined) { return \"verify_identity\"}})()",
+
+    "getScript": "",
+
+    "checkWalmartOrderListPage": "(function() { var element = document.querySelector(\"form[id*='track-order-form']\").querySelector(\"h1\").innerText;\n                \n         if (element == null || element.length == 0)\n                \n         {return 'scrape'} else {                \n         \nreturn element}})()"
+  }
+}

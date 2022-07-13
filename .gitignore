@@ -1,0 +1,52 @@
+# compiled output
+/dist
+/node_modules
+package-lock.json
+/analysis/node_modules
+/analysis/package-lock.json
+/analysis/credentials.json
+/analysis/token.json
+assets/es5
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+#uploded files
+uploads/*
+
+#ENV files
+.env
+scraperConfig.json
+
+#Automation 
+/automation/reports/node_modules/
+/automation/reports/node_modules/*
+/automation/reports/config.json
+/automation/reports/*.json
+node_modules

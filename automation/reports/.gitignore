@@ -1,0 +1,8 @@
+node_modules/
+node_modules/*
+config.json
+serviceAccount.json
+token.json
+credentials.json
+error_csv
+output_csv
